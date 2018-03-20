@@ -1,0 +1,20 @@
+{
+  "name": "booksapi",
+  "version": "1.0.0",
+  "description": "restFUll API for book managing application ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hrishikesh Kale",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "eslint": "^4.19.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11"
+  }
+}
