@@ -10,7 +10,8 @@ var TaskSchema = new Schema({
   },
   ISBN:{
     type: Number,
-    required: 'Kindly enter the name ISBN number'
+    required: 'Kindly enter the name ISBN number',
+    unique : true
   },
   addedBy:{
     type: String,
@@ -22,19 +23,20 @@ var TaskSchema = new Schema({
   },
   imgUrl:{
     type: String,
-    required: 'Kindly enter the URL'
   },
   Created_date: {
     type: Date,
     default: Date.now
   },
-//   status: {
-//     type: [{
-//       type: String,
-//       enum: ['pending', 'ongoing', 'completed']
-//     }],
-//     default: ['pending']
-//   }
+  comments: [
+    
+    {
+      type:String,
+      commentsBy:String,
+      commentsData:String
+    }
+  ]
+   
 });
 
 module.exports = mongoose.model('Books', TaskSchema);

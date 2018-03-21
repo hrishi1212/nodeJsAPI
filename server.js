@@ -20,7 +20,8 @@ app.use(function(req, res ,next) {
     res.setHeader('Access-Control-Allow-Credentials', true);   
     next();
     res.status(404).send({url: req.originalUrl + ' not found'})
+    
   });
-
+ 
 app.listen(port);
 console.log('book RESTful API server started on: ' + port);
